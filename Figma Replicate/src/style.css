@@ -1,0 +1,234 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 0.4s;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 1rem;
+}
+
+.navbar{
+	display: flex;
+	height: 6rem;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 1rem;
+	border-bottom: 2px solid rgb(162, 69, 255);
+}
+
+.logo img{
+	width: 6rem;
+	height: 6rem;
+	margin-bottom: 17px;
+}
+
+.hamburger-menu{
+	padding-right: 1.5rem;
+	cursor: pointer;
+}
+
+.hamburger-menu .line{
+display: block;
+width:2.5rem;
+height: 2px;
+margin-bottom: 10px;
+background-color: black;
+cursor: pointer;
+}
+
+.nav-menu{
+	position: fixed;
+	width: 94%;
+	top: 6rem;
+	left: 18px;
+	background-color: rgb(162, 69, 255);
+	font-weight: 600;
+
+}
+
+.nav-menu a{
+	display: block;
+	text-align: center;
+	padding: 5px 0;
+}
+.nav-menu a:hover{
+	background-color: rgb(162, 69, 255);
+}
+
+.hide{
+	display: none;
+}
+
+.icone{
+    font-size: 25px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.title{
+	margin-left: 200px;
+	padding-top: 90px;
+}
+
+.h1t{
+	font-size: 60px;
+	font-family: "Anton", sans-serif;
+	letter-spacing: 3px;
+}
+
+.h3t{
+	margin-top: 10px;
+}
+
+.oneWord{
+	color: rgb(162, 69, 255);
+}
+
+.iconePlay{
+	font-size: 25px;
+	color: rgb(162, 69, 255);
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 2px;
+    background-color: #FFFFFF;
+	margin-left: 20px;  
+    height:45px;
+	width:45px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+.btn1{
+	background-color: rgb(162, 69, 255);
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 18px;
+	border-radius: 8px;
+	margin-left: 200px;
+	margin-top: 40px;
+}
+
+.btn1:hover{
+	background-color: rgb(174, 94, 253);
+}
+
+.highText{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+.areaInicial{
+	background-image: url(imgs/monteFuji.png);
+	height: 700px;
+}
+
+.imgCastle{
+	margin-top: 110px;
+	margin-left: 190px;
+	border-radius: 20px;
+}
+
+.second{
+	display: flex;
+}
+
+.textSecond{
+	margin-top: 150px;
+	margin-left: 110px;
+}
+
+.h2t2{
+	color: rgb(162, 69, 255);
+	font-size: 18px;
+}
+
+.h1t2{
+	font-family: "Anton", sans-serif;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+
+.pt2{
+	margin-top: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 25px;
+	line-height: 2;
+}
+
+.iconePlay2{
+	font-size: 25px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 2px;
+	margin-top: 15px;
+    background-color: rgb(162, 69, 255);
+    height:45px;
+	width:45px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+.highText2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+.third{
+	margin-top: 130px;
+}
+
+.h2t3{
+	text-align: center;
+	color: rgb(162, 69, 255);
+	font-size: 20px;
+}
+
+.h1t3{
+	text-align: center;
+	font-family: "Anton", sans-serif;
+	letter-spacing: 1.5px;
+	font-size: 40px;
+}
+
+/* for Desktop view */
+@media screen and (min-width:600px){
+	.navbar{
+		justify-content: space-around;
+	}
+	.nav-menu{
+		display: block;
+		position: static;
+		width: auto;
+		margin-right:20px;
+		background: none;
+	}
+	.nav-menu a{
+		display: inline-block;
+		padding: 15px 20px;
+	}
+	.nav-menu a:hover{
+		background-color: rgb(162, 69, 255);
+		border-radius: 5px;
+	}
+	.hamburger-menu{
+		display: none;
+	}
+}
