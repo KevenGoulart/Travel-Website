@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
-    <script src="index.js"></script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/5afb65cf8d.js" crossorigin="anonymous"></script>
     <title>Talking Travel</title>
 </head>
@@ -93,10 +93,10 @@
         <div class="divForm">
             <h2 class="h2inForm">Share your travels</h2>
             <h3 class="h3inForm">Suggest a new travel destination that you want to see <br> and we will feature it in our blog</h3>
-            <form>
-                <input class="input" type="text" id="dest" name="dest" placeholder="Destination name">
+            <form id="form1" method="post">
+                <input class="input" type="text" id="dest" name="Destination name" placeholder="Destination name">
                 
-                <select class="input" style="color: rgb(109, 109, 109); padding-left: 20px;" name="city" id="city">
+                <select class="input" style="color: rgb(109, 109, 109); padding-left: 20px;" name="Destination City" id="city">
                     <option value="" disabled selected hidden>City of destination</option>
                     <option value="tokyo">Tokyo</option>
                     <option value="osaka">Osaka</option>
@@ -107,9 +107,9 @@
                     <option value="miyajima">Miyajima</option>
                   </select>
                 
-                <input class="input" type="text" id="name" name="name" placeholder="Your name">
+                <input class="input" type="text" id="user" name="Name" placeholder="Your name">
 
-                <select class="input" style="color: rgb(109, 109, 109); padding-left: 20px;" name="shot" id="shot">
+                <select class="input" style="color: rgb(109, 109, 109); padding-left: 20px;" name="Shooting Category" id="shot">
                     <option value="" disabled selected hidden>Shooting category</option>
                     <option value="nature">Nature</option>
                     <option value="people">People</option>
@@ -117,9 +117,9 @@
 
                   </select>
                 
-                <input class="input bigInput" type="text" id="desc" name="desc" placeholder="Describe what kind of photos you want to focus on">
+                <input class="input bigInput" type="text" id="desc" name="Description" placeholder="Describe what kind of photos you want to focus on">
                 
-                <button class="btnSub">Submit</button>
+                <button class="btnSub" type="button" onclick="Enviar();">Submit</button>
               </form>
         </div>
     </div>
